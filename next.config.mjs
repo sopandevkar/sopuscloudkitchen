@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const repoName = '/restaurant-ad';
+const repoName = '/sopuscloudkitchen';
 const nextConfig = () => {
   // GitHub Pages configuration for Sopu's Cloud Kitchen
   const isProduction = process.env.NODE_ENV === 'production';
