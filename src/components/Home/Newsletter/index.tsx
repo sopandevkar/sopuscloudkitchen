@@ -26,6 +26,15 @@ const Newsletter = () => {
                             <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
                                 Get in Touch with Us
                             </h2>
+                            
+                            {/* Service Area Badge */}
+                            <div className="mb-6 inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border-2 border-white/30 rounded-full px-4 py-2">
+                                <Icon icon="mdi:map-marker" width="20" height="20" className="text-white" />
+                                <span className="text-white font-semibold">
+                                    🍛 Delivering in Chh. Sambhaji Nagar
+                                </span>
+                            </div>
+                            
                             <p className="text-white/90 text-lg mb-8 leading-relaxed">
                                 Ready to order authentic biryani or have a question? We're here to help! Choose your preferred way to connect with us.
                             </p>

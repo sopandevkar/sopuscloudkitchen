@@ -13,6 +13,10 @@ const Footer: FC = () => {
             <p className="text-xs font-medium text-grey dark:text-white/50 mt-4 max-w-xs">
               Sopu's Cloud Kitchen — home of authentic slow-cooked biryanis.
             </p>
+            <div className="mt-3 flex items-center gap-2 text-xs text-primary">
+              <Icon icon="mdi:map-marker" width="16" height="16" />
+              <span className="font-semibold">Serving in Chh. Sambhaji Nagar</span>
+            </div>
           </div>
 
           <div className="md:col-span-2 flex items-center justify-end">
