@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { imageUrl } from '@/utils/publicPath';
 import Link from 'next/link';
+import { Icon } from '@iconify/react';
 
 
 const Hero = () => {
@@ -14,6 +15,17 @@ const Hero = () => {
                         <h1 className="text-4xl lg:text-7xl font-semibold mb-5 text-black dark:text-white md:4px lg:text-start text-center">
                             Sopu's Biryani — Authentic Flavour, Timeless Recipe
                         </h1>
+                        
+                        {/* Service Area Notice */}
+                        <div className="mb-6 lg:text-start text-center">
+                            <div className="inline-flex items-center gap-2 bg-primary/10 border-2 border-primary rounded-full px-4 py-2 animate-pulse">
+                                <Icon icon="mdi:map-marker" width="20" height="20" className="text-primary" />
+                                <span className="text-primary font-semibold">
+                                    Now Serving in Chh. Sambhaji Nagar
+                                </span>
+                            </div>
+                        </div>
+                        
                         <p className='text-black/55 dark:text-white/50 lg:text-lg font-normal mb-10 lg:text-start text-center'>Experience handcrafted biryanis made with time-honoured spices and slow-cooked perfection — each plate prepared by Chef Sopu.</p>
                         <div className='md:flex align-middle justify-center lg:justify-start gap-4 mb-8 md:mb-0'>
                             <Link href='https://zomato.onelink.me/xqzv/m1g9ltnd' target='_blank' rel='noopener noreferrer' className='flex border w-full md:w-auto mt-5 md:mt-0 border-red-500 bg-red-500 justify-center rounded-full text-xl font-medium items-center py-5 px-10 text-white hover:bg-red-600 transition-colors'>Order on Zomato</Link>
