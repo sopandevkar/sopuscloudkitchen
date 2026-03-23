@@ -17,57 +17,14 @@ const Footer: FC = () => {
               <Icon icon="mdi:map-marker" width="16" height="16" />
               <span className="font-semibold">Serving in Chh. Sambhaji Nagar</span>
             </div>
-          </div>
-
-          <div className="md:col-span-2 flex items-center justify-end">
-            <div className="hidden sm:flex md:items-center md:gap-4">
-              <div className="flex gap-3">
-                <Link 
-                  href="https://zomato.onelink.me/xqzv/m1g9ltnd" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group bg-red-500 hover:bg-red-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
-                  title="Order on Zomato"
-                >
-                  <span className="text-white font-bold text-xl">Z</span>
-                </Link>
-                <Link 
-                  href="https://www.swiggy.com/menu/1271738?source=sharing" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
-                  title="Order on Swiggy"
-                >
-                  <Icon icon="simple-icons:swiggy" width="20" height="20" className="text-white" />
-                </Link>
-                <Link 
-                  href="https://maps.app.goo.gl/1U935c44DknKhRRs6?g_st=aw" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group bg-blue-500 hover:bg-blue-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
-                  title="View Location on Google Maps"
-                >
-                  <Icon icon="mdi:google-maps" width="20" height="20" className="text-white" />
-                </Link>
-                <Link 
-                  href="https://www.instagram.com/sopus_cloudkitchen?igsh=ZjkwdTgwMmZ6c3Bt" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
-                  title="Follow us on Instagram"
-                >
-                  <Icon icon="mdi:instagram" width="20" height="20" className="text-white" />
-                </Link>
-              </div>
-            </div>
-
-            {/* On very small screens, show icons below description */}
-            <div className="sm:hidden mt-4 flex gap-3">
+            
+            {/* Social Icons - Moved to Left Side */}
+            <div className="mt-4 flex gap-3">
               <Link 
                 href="https://zomato.onelink.me/xqzv/m1g9ltnd" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group bg-red-500 hover:bg-red-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                className="group bg-red-500 hover:bg-red-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300 hover:scale-110"
                 title="Order on Zomato"
               >
                 <span className="text-white font-bold text-xl">Z</span>
@@ -76,7 +33,7 @@ const Footer: FC = () => {
                 href="https://www.swiggy.com/menu/1271738?source=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                className="group bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300 hover:scale-110"
                 title="Order on Swiggy"
               >
                 <Icon icon="simple-icons:swiggy" width="20" height="20" className="text-white" />
@@ -85,7 +42,7 @@ const Footer: FC = () => {
                 href="https://maps.app.goo.gl/1U935c44DknKhRRs6?g_st=aw" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group bg-blue-500 hover:bg-blue-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                className="group bg-blue-500 hover:bg-blue-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300 hover:scale-110"
                 title="View Location on Google Maps"
               >
                 <Icon icon="mdi:google-maps" width="20" height="20" className="text-white" />
@@ -94,12 +51,15 @@ const Footer: FC = () => {
                 href="https://www.instagram.com/sopus_cloudkitchen?igsh=ZjkwdTgwMmZ6c3Bt" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300"
+                className="group bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 rounded-full shadow-lg w-10 h-10 flex items-center justify-center transition-all duration-300 hover:scale-110"
                 title="Follow us on Instagram"
               >
                 <Icon icon="mdi:instagram" width="20" height="20" className="text-white" />
               </Link>
             </div>
+          </div>
+
+          <div className="md:col-span-2 flex items-start justify-end pt-4">
           </div>
         </div>
       </div>

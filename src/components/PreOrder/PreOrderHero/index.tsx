@@ -11,9 +11,13 @@ const PreOrderHero = () => {
                 
                 {/* Header Banner */}
                 <div className="text-center mb-8">
-                    <div className="inline-block bg-gradient-to-r from-primary to-orange-600 text-white px-6 py-3 rounded-full shadow-lg mb-4">
-                        <h1 className="text-2xl md:text-4xl font-bold">
-                            Hyderabadi Chicken Dum Biryani @ ₹99
+                    <div className="inline-block bg-gradient-to-r from-primary to-orange-600 text-white px-6 py-4 rounded-full shadow-lg mb-4">
+                        <h1 className="text-2xl md:text-4xl font-bold flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3">
+                            <span>Hyderabadi Chicken Dum Biryani</span>
+                            <span className="flex items-center gap-2">
+                                <span className="text-lg md:text-2xl line-through opacity-70">₹149</span>
+                                <span className="text-3xl md:text-5xl text-yellow-300">₹99</span>
+                            </span>
                         </h1>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 mt-4">
@@ -24,6 +28,10 @@ const PreOrderHero = () => {
                         <div className="flex items-center gap-2 bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-md">
                             <Icon icon="mdi:clock-alert" className="text-orange-600" width="24" />
                             <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">Limited Slots</span>
+                        </div>
+                        <div className="flex items-center gap-2 bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-md">
+                            <Icon icon="mdi:fire" className="text-red-600" width="24" />
+                            <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">Only 30 Orders Per Day</span>
                         </div>
                     </div>
                 </div>
@@ -220,13 +228,6 @@ const PreOrderHero = () => {
                                 <p className="text-gray-600 dark:text-gray-400">Hot & fresh biryani delivered to your doorstep</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                {/* Limited Orders Badge */}
-                <div className="text-center mb-8">
-                    <div className="inline-block bg-gradient-to-r from-red-500 to-orange-500 text-white px-8 py-4 rounded-2xl shadow-xl">
-                        <p className="text-2xl font-bold">Only 30 Orders Per Day!</p>
                     </div>
                 </div>
 
