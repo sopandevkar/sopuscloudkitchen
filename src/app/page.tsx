@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "@/components/Home/Hero";
+import PreOrderBanner from "@/components/Home/PreOrderBanner";
 import Features from "@/components/Home/Features";
 import Cook from "@/components/Home/Cook";
 import Gallery from "@/components/Home/Gallery";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <PreOrderBanner />
       <Features />
       <Cook />
       <Gallery />

@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import ScrollToTop from "@/components/ScrollToTop";
 import FaviconLinks from "@/components/FaviconLinks";
 import FloatingOrderButton from "@/components/FloatingOrderButton";
+import FloatingPreOrderButton from "@/components/FloatingPreOrderButton";
 import { Metadata } from "next";
 
 const font = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700"], });
@@ -68,6 +69,7 @@ export default function RootLayout({
           <Footer />
           <ScrollToTop />
           <FloatingOrderButton />
+          <FloatingPreOrderButton />
         </ThemeProvider>
       </body>
     </html>
