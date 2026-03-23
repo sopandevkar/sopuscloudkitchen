@@ -106,7 +106,7 @@ const PreOrderHero = () => {
 
                             {/* Book Button */}
                             <Link
-                                href="https://forms.gle/your-campus-form-link"
+                                href="https://forms.gle/M7Abw53GbG4o4Voa6"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-center gap-3 w-full bg-white hover:bg-gray-100 text-primary text-xl font-bold py-5 px-8 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
@@ -118,7 +118,15 @@ const PreOrderHero = () => {
                     </div>
 
                     {/* Home Delivery Card */}
-                    <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+                    <div className="relative bg-gradient-to-br from-gray-400 to-gray-500 rounded-3xl shadow-2xl overflow-hidden opacity-75">
+                        {/* Coming Soon Overlay */}
+                        <div className="absolute inset-0 bg-black/20 z-10 flex items-center justify-center">
+                            <div className="bg-white rounded-2xl px-8 py-4 shadow-2xl transform rotate-[-5deg]">
+                                <p className="text-3xl font-bold text-gray-800 text-center">Coming Soon!</p>
+                                <p className="text-sm text-gray-600 text-center mt-1">Stay Tuned</p>
+                            </div>
+                        </div>
+
                         <div className="p-6">
                             <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 mb-4">
                                 <h3 className="text-2xl font-bold text-white text-center mb-2">
@@ -131,7 +139,7 @@ const PreOrderHero = () => {
                             <div className="space-y-3 mb-6">
                                 <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-xl p-3">
                                     <div className="bg-white rounded-full p-2">
-                                        <Icon icon="mdi:calendar-clock" className="text-green-600" width="24" />
+                                        <Icon icon="mdi:calendar-clock" className="text-gray-600" width="24" />
                                     </div>
                                     <div className="flex-1">
                                         <p className="text-white font-semibold">Day: 12:00 PM - 4:00 PM</p>
@@ -139,7 +147,7 @@ const PreOrderHero = () => {
                                 </div>
                                 <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-xl p-3">
                                     <div className="bg-white rounded-full p-2">
-                                        <Icon icon="mdi:weather-night" className="text-green-600" width="24" />
+                                        <Icon icon="mdi:weather-night" className="text-gray-600" width="24" />
                                     </div>
                                     <div className="flex-1">
                                         <p className="text-white font-semibold">Night: 8:00 PM - 10:00 PM</p>
@@ -162,16 +170,14 @@ const PreOrderHero = () => {
                                 />
                             </div>
 
-                            {/* Book Button */}
-                            <Link
-                                href="https://forms.gle/your-home-form-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center justify-center gap-3 w-full bg-white hover:bg-gray-100 text-green-700 text-xl font-bold py-5 px-8 rounded-full shadow-lg hover:scale-105 transition-all duration-300"
+                            {/* Disabled Button */}
+                            <button
+                                disabled
+                                className="flex items-center justify-center gap-3 w-full bg-gray-300 text-gray-500 text-xl font-bold py-5 px-8 rounded-full shadow-lg cursor-not-allowed opacity-60"
                             >
                                 <span>Order for Home</span>
-                                <Icon icon="mdi:arrow-right" width="24" />
-                            </Link>
+                                <Icon icon="mdi:lock" width="24" />
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -227,7 +233,7 @@ const PreOrderHero = () => {
                 {/* CTA Button */}
                 <div className="text-center">
                     <Link
-                        href="https://forms.gle/your-google-form-link"
+                        href="https://forms.gle/M7Abw53GbG4o4Voa6"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white text-2xl font-bold py-6 px-12 rounded-full shadow-2xl hover:scale-105 transition-all duration-300 animate-pulse"
