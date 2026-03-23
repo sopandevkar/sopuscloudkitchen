@@ -36,6 +36,15 @@ const PreOrderHero = () => {
                     </div>
                 </div>
 
+                {/* Campus Delivery Only - Prominent Badge */}
+                <div className="text-center mb-6">
+                    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-primary text-white px-6 py-3 rounded-full shadow-xl border-2 border-white animate-pulse">
+                        <Icon icon="mdi:school" className="text-white" width="28" />
+                        <span className="font-bold text-lg md:text-xl">Campus Delivery Only!!!</span>
+                        <Icon icon="mdi:school" className="text-white" width="28" />
+                    </div>
+                </div>
+                
                 {/* Pre-Booking Badge */}
                 <div className="text-center mb-6">
                     <div className="inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 border-2 border-yellow-400 px-4 py-2 rounded-lg">
