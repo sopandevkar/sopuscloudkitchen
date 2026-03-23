@@ -232,16 +232,28 @@ const PreOrderHero = () => {
 
                 {/* CTA Button */}
                 <div className="text-center">
-                    <Link
-                        href="https://forms.gle/M7Abw53GbG4o4Voa6"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white text-2xl font-bold py-6 px-12 rounded-full shadow-2xl hover:scale-105 transition-all duration-300 animate-pulse"
-                    >
-                        <Icon icon="mdi:google-forms" width="32" />
-                        <span>Book Now on Google Form</span>
-                        <Icon icon="mdi:arrow-right" width="32" />
-                    </Link>
+                    <div className="relative inline-block">
+                        {/* Animated glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-primary to-orange-600 rounded-full blur-xl opacity-60 animate-pulse"></div>
+                        
+                        {/* Main button */}
+                        <Link
+                            href="https://forms.gle/M7Abw53GbG4o4Voa6"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="relative inline-flex items-center justify-center gap-2 md:gap-3 bg-gradient-to-r from-primary via-orange-500 to-orange-600 hover:from-orange-600 hover:via-primary hover:to-primary text-white text-xl md:text-2xl font-bold py-4 px-8 md:py-5 md:px-10 rounded-full shadow-2xl hover:shadow-primary/50 hover:scale-110 transition-all duration-300 border-2 border-white"
+                        >
+                            {/* Lightning Icon with pulse */}
+                            <div className="bg-yellow-300 rounded-full p-1.5 animate-pulse">
+                                <Icon icon="mdi:lightning-bolt" width="24" height="24" className="text-orange-600" />
+                            </div>
+                            
+                            <span className="drop-shadow-lg">Hurry! Book Now</span>
+                            
+                            {/* Arrow with bounce animation */}
+                            <Icon icon="mdi:arrow-right-circle" width="32" height="32" className="text-yellow-300 animate-bounce" />
+                        </Link>
+                    </div>
                 </div>
 
                 {/* Service Area Notice */}
